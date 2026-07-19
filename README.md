@@ -8,7 +8,7 @@ nested under any parent compartment or the tenancy root.
 
 ```hcl
 module "compartment" {
-  source = "github.com/cybercapybara/terraform-oci-compartment"
+  source = "github.com/moveeeax/terraform-oci-compartment"
 
   parent_compartment_id = var.tenancy_id
   name                  = "prod"
