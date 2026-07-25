@@ -7,6 +7,10 @@ module "compartment" {
   name                  = "example-team"
   description           = "Example team compartment"
 
+  # This example creates a throwaway sandbox compartment, so opt in to deletion
+  # on destroy. Leave enable_delete at its default (false) for anything real.
+  enable_delete = true
+
   freeform_tags = {
     Environment = "sandbox"
     ManagedBy   = "terraform"
