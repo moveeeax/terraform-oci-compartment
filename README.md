@@ -8,7 +8,7 @@ nested under any parent compartment or the tenancy root.
 
 ```hcl
 module "compartment" {
-  source = "github.com/moveeeax/terraform-oci-compartment"
+  source = "github.com/moveeeax/terraform-oci-compartment?ref=v1.0.0"
 
   parent_compartment_id = var.tenancy_id
   name                  = "prod"
@@ -35,7 +35,7 @@ Set `enable_delete = true` deliberately for compartments that are genuinely ephe
 
 ```hcl
 module "sandbox" {
-  source = "github.com/moveeeax/terraform-oci-compartment"
+  source = "github.com/moveeeax/terraform-oci-compartment?ref=v1.0.0"
 
   parent_compartment_id = var.tenancy_id
   name                  = "ci-sandbox"
