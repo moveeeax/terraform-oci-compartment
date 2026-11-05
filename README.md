@@ -99,3 +99,7 @@ supports >= 1.5.
 ## License
 
 [MIT](LICENSE)
+
+---
+
+**Archived on 2026-11-05.** merge into terraform-oci-baseline: single-resource pass-through with no logic; baseline already creates the same compartment. Keep only if it becomes the compartment-tree module below. The scope moves to [terraform-oci-baseline](https://github.com/moveeeax/terraform-oci-baseline/issues/3).
